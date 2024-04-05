@@ -33,8 +33,8 @@ export default function Home() {
                                 <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
                                     Automate Your Work With Fuzzie
                                 </h1>
-                            </div>} children={''}>
-
+                            </div>}>
+                        <div></div>
                     </ContainerScroll>
                 </div>
             </section>
