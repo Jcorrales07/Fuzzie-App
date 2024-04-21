@@ -53,7 +53,8 @@ export default function Home() {
                 <LampComponent/>
                 <div className='flex flex-wrap items-center justify-center flex-col md:flex-row gap-8 -mt-72'>
                     <CardContainer className="inter-var ">
-                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+                        <CardBody
+                            className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
                             <CardItem
                                 className="text-xl font-bold text-neutral-600 dark:text-white "
                             >
@@ -67,7 +68,7 @@ export default function Home() {
                                 up {"you'll"} never leave us after this!
                                 <ul className="my-4 flex flex-col gap-2">
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />
+                                        <CheckIcon/>
                                         10 tasks per month
                                     </li>
                                     <li className="flex items-center gap-2">
@@ -95,7 +96,8 @@ export default function Home() {
                         </CardBody>
                     </CardContainer>
                     <CardContainer className="inter-var ">
-                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-[#E2CBFF] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+                        <CardBody
+                            className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-[#E2CBFF] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
                             <CardItem
                                 className="text-xl font-bold text-neutral-600 dark:text-white "
                             >
@@ -109,14 +111,14 @@ export default function Home() {
                                 up {"you'll"} never leave us after this!
                                 <ul className="my-4 flex flex-col gap-2">
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />3 Free automations
+                                        <CheckIcon/>3 Free automations
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />
+                                        <CheckIcon/>
                                         100 tasks per month
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />
+                                        <CheckIcon/>
                                         Two-step Actions
                                     </li>
                                 </ul>
@@ -138,7 +140,8 @@ export default function Home() {
                         </CardBody>
                     </CardContainer>
                     <CardContainer className="inter-var ">
-                        <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
+                        <CardBody
+                            className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-neutral-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full md:!w-[350px] h-auto rounded-xl p-6 border">
                             <CardItem
                                 className="text-xl font-bold text-neutral-600 dark:text-white "
                             >
@@ -152,14 +155,14 @@ export default function Home() {
                                 up {"you'll"} never leave us after this!
                                 <ul className="my-4 flex flex-col gap-2">
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />30 Free automations
+                                        <CheckIcon/>30 Free automations
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />
+                                        <CheckIcon/>
                                         10,000 tasks per month
                                     </li>
                                     <li className="flex items-center gap-2">
-                                        <CheckIcon />
+                                        <CheckIcon/>
                                         Two-step Actions
                                     </li>
                                 </ul>
