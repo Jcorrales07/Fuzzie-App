@@ -5,6 +5,7 @@ import type {Metadata} from "next";
 // Aca podes importar fonts desde Google fonts!
 import {DM_Sans} from "next/font/google";
 import "./globals.css";
+import {ClerkProvider} from "@clerk/nextjs";
 
 // Aca creas un objeto del font
 const font = DM_Sans({subsets: ["latin"]});
@@ -20,17 +21,21 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
+        <ClerkProvider
+            publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+        >
         <html lang="en">
         <body className={font.className}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-        >
-            {children}
-        </ThemeProvider>
+            <ThemeProvider
+                attribute="class"
+                defaultTheme="dark"
+                enableSystem
+                disableTransitionOnChange
+            >
+                {children}
+            </ThemeProvider>
         </body>
         </html>
+        </ClerkProvider>
     );
 }

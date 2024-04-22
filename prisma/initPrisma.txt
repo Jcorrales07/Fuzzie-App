@@ -1,0 +1,20 @@
+Para inicializar prisma:
+
+1. Instalar la dependencia
+npm i -D prisma
+
+2. Inicializarla
+npx prisma init
+
+3. Generar (?), se hace luego de hacer un modelo para la db
+npx prisma generate
+Sirve para generar los modelos una vez que ya los creaste
+
+4. Luego de configurar el 'db.ts'...
+npx prisma db push
+Y deberia decirte la info de tu db que esta sincronisada con prisma
+Sirve para mandar los modelos, a la db en Neon y asi tenerla sync.
+
+5. Si lo queres ver en un 'servidor' de prisma y manejarlo ahi:
+npx prisma studio
+Lo va a correr en localhost:5555 y ahi lo podes ver
