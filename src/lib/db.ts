@@ -1,3 +1,4 @@
+// Esta es la conexion a la db
 import { PrismaClient } from '@prisma/client'
 
 declare global {

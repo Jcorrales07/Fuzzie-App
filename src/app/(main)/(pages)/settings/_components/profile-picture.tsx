@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import UploadcareButton from "@/app/(main)/(pages)/settings/_components/uploadcare-button";
 import {useRouter} from "next/navigation";
@@ -8,7 +9,7 @@ import {X} from "lucide-react";
 type Props = {
     userImage: string | null
     onDelete?: any
-    onUpload?: any
+    onUpload: (e: string) => any
 }
 
 function ProfilePicture({userImage, onUpload, onDelete}: Props) {
@@ -28,13 +29,13 @@ function ProfilePicture({userImage, onUpload, onDelete}: Props) {
             <div className={"flex h-[30vh] flex-col items-center justify-center"}>
                 {userImage ? (<>
                     <div className="relative h-full w-2/12">
-                        <Image src={userImage} alt={"User_Image"} fill/>
+                        <Image src={userImage} alt={"User_Image"} fill className={'object-cover'}/>
                     </div>
                     <Button onClick={onRemoveProfileImage}
                             className="bg-transparent text-white/70 hover:bg-transparent hover:text-white">
                         <X /> Remove Logo
                     </Button>
-                </>) : <UploadcareButton/>}
+                </>) : <UploadcareButton onUpload={onUpload} />}
 
             </div>
         </div>
