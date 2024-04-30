@@ -1,0 +1,24 @@
+2 31 -> 3 31: Creacion de contextos para manejar el estado global de la applicacion
+Hicimos como una especie de Redux
+
+archivos:
+workflows/_components/index.tsx
+workflows/_components/workflow.tsx
+workflows/_components/workflow-button.tsx
+
+workflows/editor/page.tsx
+
+workflows/[editorId]/page.tsx
+
+components/forms/workflow-form.tsx
+
+src/lib/types.ts
+
+src/providers/editor-provider.tsx
+src/providers/modal-provider.tsx (?
+
+3 31 -> 4 31: Set up de los Providers y implementacion del React flow
+
+archivos:
+    src/app/(main)/(pages)/workflows/editor/[editorId]/_components/editor-canvas.tsx
+
